@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/hupu/hupu",
+    "pages/map/map",
+    "pages/hupu-item/hupu-item"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/about.png",
+        "iconPath": "images/about.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/about.png",
+        "iconPath": "images/about.png",
+        "pagePath": "pages/map/map",
+        "text": "地图"
+      },
+      {
+        "selectedIconPath": "images/about.png",
+        "iconPath": "images/about.png",
+        "pagePath": "pages/hupu/hupu",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

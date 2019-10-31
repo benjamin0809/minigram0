@@ -1,0 +1,17 @@
+ 
+    <view class="main-page">
+      <view class="left-box">
+        <a wx:for="{{files}}" wx:key="*this">
+        <view  class="item">
+          <image class="image"  src="{{item.fullpath}}"></image> 
+        </view>
+        </a> 
+      </view> 
+      <view class="right-box">
+        <a wx:for="{{files}}" wx:key="*this">
+        <view  class="item">
+          <image class="image"  src="{{item.fullpath}}"></image> 
+        </view>
+        </a> 
+      </view> 
+    </view>

@@ -1,0 +1,31 @@
+/* miniprogram/pages/hupu.wxss */
+.main-page{
+  margin: 16px;
+  display: flex;
+}
+
+.main-page .left-box{
+  flex-grow: 1;
+  margin: 16px 4px 16px 16px;
+  width: 0;
+}
+
+.main-page .right-box{
+  flex-grow: 1;
+  margin: 16px 4px 16px 16px;
+  width: 0;
+}
+.main-page .item{
+  margin-bottom: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0.5px 0.5px 10px 0px #d1d1d1;
+
+}
+
+.image{
+  max-width: 100%; 
+}
+.image-box{
+  position: relative;
+}
