@@ -11,7 +11,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad (options) {
+  onLoad () {
 
   },
 
@@ -61,25 +61,16 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage () {
-
+    return {
+      title: 'hupu-item',
+      desc: 'hupu-item',
+      path: '/pages/item?id='
+    }
   },
 
   bindViewTap() {
     wx.navigateTo({
-      url: '../hupu-item/hupu-item?id=1',
-      events: {
-        // 为指定事件添加一个监听器，获取被打开页面传送到当前页面的数据
-        acceptDataFromOpenedPage(data) {
-          console.log(data)
-        },
-        someEvent(data) {
-          console.log(data)
-        } 
-      },
-      success(res) {
-        // 通过eventChannel向被打开页面传送数据
-       res.eventChannel.emit('acceptDataFromOpenerPage', { data: 'test' })
-      }
+      url: '../hupu-item/hupu-item?id=1'
     })
   }
 })

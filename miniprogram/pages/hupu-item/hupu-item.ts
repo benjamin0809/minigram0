@@ -12,13 +12,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad () { 
-    const eventChannel = this.getOpenerEventChannel()
-    eventChannel.emit('acceptDataFromOpenedPage', {data: 'test'});
-    eventChannel.emit('someEvent', {data: 'test'});
-    // 监听acceptDataFromOpenerPage事件，获取上一页面通过eventChannel传送到当前页面的数据
-    eventChannel.on('acceptDataFromOpenerPage', (data) => {
-      console.log(data)
-    })
+    // const eventChannel = this.getOpenerEventChannel()
+    // eventChannel.emit('acceptDataFromOpenedPage', {data: 'test'});
+    // eventChannel.emit('someEvent', {data: 'test'});
+    // // 监听acceptDataFromOpenerPage事件，获取上一页面通过eventChannel传送到当前页面的数据
+    // eventChannel.on('acceptDataFromOpenerPage', (data: any) => {
+    //   console.log(data)
+    // })
   },
 
   /**
@@ -67,6 +67,10 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage () {
-
+    return {
+      title: 'hupu-item',
+      desc: 'hupu-item',
+      path: '/pages/item?id='
+    }
   }
 })

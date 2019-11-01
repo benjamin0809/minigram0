@@ -15,11 +15,11 @@ const request = (requestMethod: 'GET' | 'POST', url: string, data: any) =>{
   })
 }
 
-const httpGet = (url: string, data: any) =>{
+const httpGet = (url: string, data: any):Promise<any>  =>{
   return request('GET', url, data)
 }
 
-const httpPost = (url: string, data: any) =>{
+const httpPost = (url: string, data: any):Promise<any> =>{
   return request('POST', url, data)
 }
 
