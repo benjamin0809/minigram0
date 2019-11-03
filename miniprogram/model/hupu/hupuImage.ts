@@ -29,6 +29,7 @@ interface HupuImage{
   fullpath: string
   height: number
   realheight: number
+  imageheight: number
   id: number
   images: string
   modifiedTime: string
@@ -38,4 +39,5 @@ interface HupuImage{
   title: string
   username: string
   width: number
+  
 }

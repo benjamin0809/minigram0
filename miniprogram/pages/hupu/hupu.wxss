@@ -1,6 +1,6 @@
 /* miniprogram/pages/hupu.wxss */
 .main-page{
-  margin: 16px;
+  /* margin: 16px; */
   display: flex;
 }
 
@@ -12,20 +12,56 @@
 
 .main-page .right-box{
   flex-grow: 1;
-  margin: 16px 4px 16px 16px;
+  margin: 16px 16px 16px 4px;
   width: 0;
 }
 .main-page .item{
-  margin-bottom: 12px;
+    margin-bottom: 12px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0.5px 0.5px 10px 0px #d1d1d1;
+    position: relative; 
 
 }
 
 .image{
-  max-width: 100%; 
+  width: 100%; 
+  height: auto;
+  display: block;
 }
 .image-box{
   position: relative;
+}
+ 
+ 
+.description{ 
+  font-size: 12px;
+  padding: 8px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden; 
+}
+
+.image-bg{
+    max-height: 30vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.author{
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.author .avatar{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.author .author-name{
+  font-size: 12px;
+  margin-left: 4px;
+  font-weight: 200;
 }
