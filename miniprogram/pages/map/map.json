@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarTitleText": "钵仔糕",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#3CB371"
 }
