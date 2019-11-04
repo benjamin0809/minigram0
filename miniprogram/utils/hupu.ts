@@ -8,6 +8,13 @@ const fetchHupuImages = (offset: number): Promise<any> =>{
   }) 
 }
 
+const getOpenId = (code: string): Promise<any> => {
+  return httpGet('https://www.popochiu.com/wechat/getOpenId', {
+    code
+  })
+}
+
 export {
-  fetchHupuImages
+  fetchHupuImages,
+  getOpenId
 }

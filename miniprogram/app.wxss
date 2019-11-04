@@ -8,3 +8,10 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+ul{
+  margin: 16px;
+}
+li{
+  margin-left: 16px;
+  display: block;
+}

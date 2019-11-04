@@ -13,8 +13,20 @@ Page({
   },
   //事件处理函数
   bindViewTap() {
-    wx.navigateTo({
-      url: '../logs/logs'
+    // wx.navigateTo({
+    //   url: '../logs/logs'
+    // }) 
+
+    wx.login({
+      success: res => {
+        console.log(res.code)
+      }
+    })
+    wx.getUserInfo({
+      success: res => {
+        app.globalData.userInfo = res.userInfo
+        console.log(res)
+      }
     })
   },
   onLoad() { 
