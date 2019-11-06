@@ -4,6 +4,7 @@
   "scripts": {
     "compile": "./node_modules/typescript/bin/tsc",
     "test": "node test",
+    "test2": "node test2",
     "tsc": "node ./node_modules/typescript/lib/tsc.js"
   },
   "devDependencies": {},
