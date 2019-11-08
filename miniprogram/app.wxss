@@ -15,3 +15,6 @@ li{
   margin-left: 16px;
   display: block;
 }
+page{
+  background: #DBDBDB;
+}

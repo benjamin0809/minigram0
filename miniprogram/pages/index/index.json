@@ -1,6 +1,11 @@
 {
-  "usingComponents": {}, 
+  "component": true,
+  "usingComponents": {
+    "list-item": "../../components/list-item",
+    "item-group": "../../components/item-group"
+  }, 
   "navigationBarTitleText": "虾饺",
   "navigationBarTextStyle": "white",
-  "navigationBarBackgroundColor": "#3CB371"
+  "navigationBarBackgroundColor": "#3CB371",
+  "backgroundColor": "#dbdbdb"
 }

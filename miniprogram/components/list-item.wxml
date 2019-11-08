@@ -1,0 +1,15 @@
+<!--list-item.wxml-->
+<!-- <view class="list-item">
+  <view class="inner-wrapper">
+    <text>{{title}}</text>
+    <image class="icon" src="../../images/right.svg"></image>
+  </view>
+</view> -->
+
+<a class="item-wrapper">
+  <view class="item">
+    <image class="avatar-start" src="{{logo}}"></image>
+    <text class="item-content">{{title}}</text>
+    <image class="arrow" src="../images/right.svg"></image>
+  </view>
+</a>

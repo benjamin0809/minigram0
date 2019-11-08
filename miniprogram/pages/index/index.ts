@@ -10,6 +10,22 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    items: [{
+      id: 'favourite',
+      routeUrl: '../my/favourite/favourite'
+    }, {
+        id: 'activities',
+        routeUrl: '../my/activities/activities'
+      }, {
+        id: 'publish',
+        routeUrl: '../my/publish/publish'
+      }, {
+        id: 'setting',
+        routeUrl: '../my/setting/setting'
+      }, {
+        id: 'about',
+        routeUrl: '../my/about/about'
+      },]
   },
   //事件处理函数
   bindViewTap() {
@@ -65,5 +81,16 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  tapItem(e: any) {
+    const id = e.currentTarget.id;
+
+    const item = this.data.items.find(p => p.id === id) || { routeUrl: ''};
+    wx.navigateTo({
+      url: item.routeUrl
+    })
+  },
+  add() {
+    
   }
 })

@@ -2,15 +2,21 @@
   "pages": [
     "pages/hupu/hupu",
     "pages/index/index",
-    "pages/logs/logs", 
+    "pages/logs/logs",
     "pages/map/map",
-    "pages/hupu-item/hupu-item"
+    "pages/hupu-item/hupu-item",
+    "pages/my/about/about",
+    "pages/my/setting/setting",
+    "pages/my/activities/activities",
+    "pages/my/favourite/favourite",
+    "pages/my/publish/publish"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#dbdbdb"
   },
   "tabBar": {
     "color": "#a9b7b7",

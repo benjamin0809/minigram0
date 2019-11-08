@@ -1,19 +1,53 @@
 <!--index.wxml-->
-<view class="container">
+<view class="container box">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  </view> 
+</view>
+  
+<view class="item-list-group">
+  <a id="favourite" class="item-wrapper" bindtap="tapItem">
+    <view class="item">
+      <image class="avatar-start" src="../../images/liuliansu.svg"></image>
+      <text class="item-content">我的收藏</text>
+      <image class="arrow" src="../../images/right.svg"></image>
+    </view>
+  </a>
+  <a id="publish" class="item-wrapper" bindtap="tapItem">
+    <view class="item">
+      <image class="avatar-start" src="../../images/nuomiji.svg"></image>
+      <text class="item-content">我的发表</text>
+      <image class="arrow" src="../../images/right.svg"></image>
+    </view>
+  </a> 
+  <a id="activities" class="item-wrapper" bindtap="tapItem">
+    <view class="item">
+      <image class="avatar-start" src="../../images/shoutaobao.svg"></image>
+      <text class="item-content">我的活动</text>
+      <image class="arrow" src="../../images/right.svg"></image>
+    </view>
+  </a> 
 </view>
 
-<ul>
-  <li>我的收藏</li>
-  <li>我的发表</li>
-  <li>我的活动</li>
-</ul>
+<view class="item-list-group">
+  <a id="setting" class="item-wrapper" bindtap="tapItem">
+    <view class="item">
+      <image class="avatar-start" src="../../images/youtiao.svg"></image>
+      <text class="item-content">设置</text>
+      <image class="arrow" src="../../images/right.svg"></image>
+    </view>
+  </a>
+  <a id="about" class="item-wrapper" bindtap="tapItem">
+    <view class="item">
+      <image class="avatar-start" src="../../images/tangbushuai.svg"></image>
+      <text class="item-content">关于</text>
+      <image class="arrow" src="../../images/right.svg"></image>
+    </view>
+  </a> 
+</view>
+
+

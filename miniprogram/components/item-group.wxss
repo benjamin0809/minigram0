@@ -1,0 +1,14 @@
+/* component/item-group.wxss */
+item-group{
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #fff;
+    margin-bottom: 16px;
+}
+
+.item-list-group{
+  border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #fff;
+    margin-bottom: 16px;
+}
