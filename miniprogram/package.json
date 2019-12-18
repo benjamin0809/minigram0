@@ -1,0 +1,20 @@
+{
+  "name": "miniprogram",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "engine.io-client": "^3.4.0",
+    "fs": "0.0.1-security",
+    "miniprogram-sm-crypto": "^0.1.0",
+    "socket.io-client": "^2.3.0",
+    "vant-weapp": "^0.5.27",
+    "xmlhttprequest-ssl": "^1.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

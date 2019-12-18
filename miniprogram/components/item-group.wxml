@@ -1,1 +1,3 @@
-<slot></slot>
+<item-group class="item-list-group">
+    <slot ></slot>
+</item-group>

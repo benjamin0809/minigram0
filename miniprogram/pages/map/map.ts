@@ -1,18 +1,37 @@
 // miniprogram/pages/map.js
+import { fetchHupuImages } from '../../utils/hupu';
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    background: [],
+    offset: 0,
+    enableAnimation: false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad () {
-
+  async onLoad () {
+    const res: any = await fetchHupuImages(this.data.offset);
+    const data = res['data'] || [];
+    const result: any = [];
+    data.forEach((item: HupuImage, index: number) => {
+      const itema: any = {
+        elementclass: 'face' + (index + 1),
+        url: item.fullpath,
+        id: index
+      }
+      if (index < 12) {
+        result.push(itema);
+          
+      }
+      this.setData!({
+        background: result
+      })
+    })
   },
 
   /**
@@ -33,7 +52,9 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide () {
-
+    this.setData!({
+      enableAnimation: false
+    })
   },
 
   /**
@@ -71,6 +92,12 @@ Page({
   bindViewTap() {
     wx.navigateTo({
       url: '../hupu-item/hupu-item?id=1'
+    })
+  },
+
+  startAnimation() {
+    this.setData!({
+      enableAnimation: !this.data.enableAnimation
     })
   }
 })

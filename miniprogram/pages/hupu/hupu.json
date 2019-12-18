@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "searchbar": "../../components/searchbar"
+  },
   "enablePullDownRefresh": true,
   "navigationBarTitleText": "酥皮叉烧包",
   "navigationBarTextStyle": "white",

@@ -9,7 +9,8 @@
     "pages/my/setting/setting",
     "pages/my/activities/activities",
     "pages/my/favourite/favourite",
-    "pages/my/publish/publish"
+    "pages/my/publish/publish",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "dark",

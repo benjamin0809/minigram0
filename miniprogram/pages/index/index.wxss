@@ -3,6 +3,7 @@
 .box{
   background: #fff;
   margin-bottom: 16px;
+  padding: 100rpx;
 }
 .userinfo {
   display: flex;
@@ -26,8 +27,8 @@
 }
 
 .item-list-group {
-  border-top: 1px solid rgba(219,219,219,0.8);
-  border-bottom: 1px solid rgba(219,219,219,0.8);
+  border-top: 0.5px solid rgba(219,219,219,0.8);
+  border-bottom: 0.5px solid rgba(219,219,219,0.8);
   background-color: #fff;
   margin-bottom: 16px;
 }
@@ -44,7 +45,7 @@
 }
 
 .item-list-group .item-wrapper .item {
-  border-bottom: 1px solid rgba(219,219,219,0.8);
+  border-bottom: 0.5px solid rgba(219,219,219,0.8);
   padding: 8px 0;
   display: flex;
   align-items: center;

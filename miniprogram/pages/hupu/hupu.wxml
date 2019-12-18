@@ -1,40 +1,41 @@
- 
+<searchbar id="SearchBar" searchstr="">
+  </searchbar>
     <view class="main-page">
       <view class="left-box">
-        <a wx:for="{{leftdata}}" wx:key="{{item.id}}" >
-        <view  class="item" > 
-          <view class="image-bg" style="height: {{item.realheight  + 'px'}}">
-              <image class="image"  src="{{item.fullpath}}?imageView2/2/w/300" style="height: {{item.imageheight  + 'px'}}" data-src="{{item.fullpath}}"  bindtap="previewImage"></image>  
-          </view>
-          
-            <a class="description-box">
-            <text class="description">{{item.title}}</text>
-          </a>
+        <a wx:for="{{leftdata}}" wx:key="{{item.id}}">
+          <view class="item">
+            <view class="image-bg" style="height: {{item.realheight  + 'px'}}">
+              <image class="image" src="{{item.fullpath}}?imageView2/2/w/300" style="height: {{item.imageheight  + 'px'}}" data-src="{{item.fullpath}}" bindtap="previewImage"></image>
+            </view>
 
-          <view class="author">
-            <image class="avatar"  src="{{item.avatar}}" ></image>
-            <text class="author-name">{{item.username}}</text>
+            <a class="description-box">
+              <text class="description">{{item.title}}</text>
+            </a>
+
+            <view class="author">
+              <image class="avatar" src="{{item.avatar}}"></image>
+              <text class="author-name">{{item.username}}</text>
+            </view>
           </view>
-        </view> 
-        </a> 
-      </view> 
+        </a>
+      </view>
       <view class="right-box">
         <a wx:for="{{rightdata}}" wx:key="{{item.id}}">
-        
-        <view  class="item" > 
-          <view class="image-bg" style="height: {{item.realheight  + 'px'}}">
-              <image class="image"  src="{{item.fullpath}}?imageView2/2/w/300" style="height: {{item.imageheight  + 'px'}}" data-src="{{item.fullpath}}"  bindtap="previewImage"></image>  
-          </view>
-          
-            <a class="description-box">
-            <text class="description">{{item.title}}</text>
-          </a>
 
-          <view class="author">
-            <image class="avatar"  src="{{item.avatar}}" ></image>
-            <text class="author-name">{{item.username}}</text>
+          <view class="item">
+            <view class="image-bg" style="height: {{item.realheight  + 'px'}}">
+              <image class="image" src="{{item.fullpath}}?imageView2/2/w/300" style="height: {{item.imageheight  + 'px'}}" data-src="{{item.fullpath}}" bindtap="previewImage"></image>
+            </view>
+
+            <a class="description-box">
+              <text class="description">{{item.title}}</text>
+            </a>
+
+            <view class="author">
+              <image class="avatar" src="{{item.avatar}}"></image>
+              <text class="author-name">{{item.username}}</text>
+            </view>
           </view>
-        </view> 
-        </a> 
-      </view> 
+        </a>
+      </view>
     </view>

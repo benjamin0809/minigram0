@@ -1,4 +1,5 @@
-import { fetchHupuImages } from '../../utils/hupu'
+import { fetchHupuImages } from '../../utils/hupu';
+// import io from 'socket.io-client';
 
 
 const IMAGE_WIDTH = (wx.getSystemInfoSync().windowWidth - 48) / 2
@@ -36,6 +37,9 @@ Page({
    */
   async onLoad() {
     wx.showLoading({ title: '拼命加载中...' });
+    // const socket = io('https://www.popochiu.com/chat/?token=12&EIO=3&transport=polling&t=Mv-Bfcs');
+    // console.log(socket)
+    
     try {
       const res: any = await fetchHupuImages(this.data.offset)
       const data = res['data'] || [];
