@@ -1,3 +1,3 @@
 *.js
 /node_modules
-/minprogram/node_modules
+/miniprogram/node_modules
